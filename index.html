@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Floating Hearts Container -->
+    <div id="hearts-container"></div>
+
+    <!-- Sparkles Container -->
+    <div id="sparkles-container"></div>
+
+    <!-- Landing Screen -->
+    <section id="landing-screen" class="landing-screen">
+        <div class="landing-content">
+            <div class="floating-hearts-landing">
+                <span class="heart-landing">&#10084;</span>
+                <span class="heart-landing">&#10084;</span>
+                <span class="heart-landing">&#10084;</span>
+            </div>
+            <h1 class="landing-title">Happy Birthday, My Love <span class="heart-icon">&#10084;</span></h1>
+            <p class="landing-subtitle">Every moment with you is my favorite memory. Today is all about celebrating the wonderful person you are.</p>
+            <button id="open-surprise-btn" class="surprise-btn">
+                <span>Open My Surprise</span>
+                <div class="btn-sparkle"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Navigation -->
+        <nav id="navbar" class="navbar">
+            <div class="nav-brand">&#10084; My Angel</div>
+            <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#story" class="nav-link">Our Story</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#memory-book" class="nav-link">Digital Book</a></li>
+                <li><a href="#letter" class="nav-link">Birthday Letter</a></li>
+                <li><a href="#reasons" class="nav-link">Reasons I Love You</a></li>
+                <!-- <li><a href="#countdown" class="nav-link">Countdown</a></li>-->
+                <li><a href="#surprise" class="nav-link">Final Surprise</a></li>
+            </ul>
+        </nav>
+        <div class="menu-overlay"></div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-hearts">
+                <span class="hero-heart">&#10084;</span>
+                <span class="hero-heart">&#10084;</span>
+                <span class="hero-heart">&#10084;</span>
+                <span class="hero-heart">&#10084;</span>
+                <span class="hero-heart">&#10084;</span>
+            </div>
+            <div class="hero-content">
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-title">My Gorgeous Angel</h1>
+                    <div class="typing-container">
+                        <span id="typing-text"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+                </div>
+                <a href="#story" class="hero-btn">Begin Our Journey</a>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Our Story Timeline -->
+        <section id="story" class="story-section">
+            <div class="section-header">
+                <h2 class="section-title">Our Story</h2>
+                <div class="title-decoration">&#10084;</div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <span>&#10084;</span>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3>The Day We Met</h3>
+                        <p class="timeline-date">Our crazy beginning</p>
+                        <p class="timeline-text">That was during SCUAA 2024 in-house training, where there were basically no sparks at all. Literal na puro training lang. Although there were times na nagkakausap tayo, pero umabot sa point na naging pet peeve mo pa yung team captain mo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <span>&#10084;</span>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3>Our First talk</h3>
+                        <p class="timeline-date">The start of forever</p>
+                        <p class="timeline-text">Our first deep talk happened during SCUAA 2025 at MMSU. I remember I had a bad cough then, and out of nowhere, you handed me some medicine. You also made me eat spicy food, even though di ako mahilig sa maanghang. The sunflower seeds will tell the rest of the story... and, of course, yung tumbler ko.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <span>&#10084;</span>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3>Our First Date</h3>
+                        <p class="timeline-date">Road forever</p>
+                        <p class="timeline-text">March 4 2026. Horizon Cafe & Bistro. Butterflies, nervous smiles, and the realization that I never wanted this feeling to end. You made my heart skip beats.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <span>&#10084;</span>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3>Our Funniest Memory</h3>
+                        <p class="timeline-date">Laughter that echoes</p>
+                        <p class="timeline-text">That moment when we couldn't stop laughing together. Ambaho kasi ng utot. Like sagad hanggang lalamunan. And that was the first time I heard your laugh dying XD.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <span>&#10084;</span>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3>Our Sweetest Moment</h3>
+                        <p class="timeline-date">Pure happiness</p>
+                        <p class="timeline-text">Every moment with you is sweet, but one special memory will always hold a permanent place in my heart. It was the last night of SCUAA 2026... a night filled with moments and memories that only the two of us will ever truly know.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate="fade-up">
+                    <div class="timeline-marker">
+                        <span>&#10084;</span>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <h3>Today</h3>
+                        <p class="timeline-date">Your special day</p>
+                        <p class="timeline-text">Happy Birthday, my love! Today is all about celebrating the wonderful person you are and the joy you bring to my life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section id="gallery" class="gallery-section">
+            <div class="section-header">
+                <h2 class="section-title2">Our Gallery</h2>
+                <div class="title-decoration">&#10084;</div>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/a.jpg" alt="Photo A">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/b.jpg" alt="Photo B">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/c.jpg" alt="Photo C">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/d.jpg" alt="Photo D">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/e.jpg" alt="Photo E">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/f.jpg" alt="Photo F">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/g.jpg" alt="Photo G">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/h.jpg" alt="Photo H">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/i.jpg" alt="Photo I">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/j.jpg" alt="Photo J">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/k.jpg" alt="Photo K">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/l.jpg" alt="Photo L">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/m.jpg" alt="Photo M">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/n.jpg" alt="Photo N">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/o.jpg" alt="Photo O">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/p.jpg" alt="Photo P">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/q.jpg" alt="Photo Q">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/r.jpg" alt="Photo R">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/s.jpg" alt="Photo S">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/t.jpg" alt="Photo T">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/u.jpg" alt="Photo U">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/v.jpg" alt="Photo V">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/w.jpg" alt="Photo W">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/x.jpg" alt="Photo X">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/y.jpg" alt="Photo Y">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/z.jpg" alt="Photo Z">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/z1.jpg" alt="Photo Z1">
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-animate="zoom">
+                    <div class="gallery-placeholder">
+                        <img src="img/z2.jpg" alt="Photo Z2">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox hidden">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous">&#10094;</button>
+            <button class="lightbox-next" aria-label="Next">&#10095;</button>
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="Gallery image">
+            </div>
+        </div>
+
+        <!-- Digital Memory Book -->
+        <section id="memory-book" class="book-section">
+            <div class="section-header">
+                <h2 class="section-title">Our Memory Book</h2>
+                <div class="title-decoration">&#10084;</div>
+            </div>
+            <div class="book-container">
+                <div class="book">
+                    <div class="book-pages">
+                        <!-- Page 1 -->
+                        <div class="book-page page-cover active">
+                            <div class="page-content">
+                                <div class="page-decoration top">&#10084;</div>
+                                <h1>Our Love Story</h1>
+                                <div class="page-heart">&#10084;</div>
+                                <p>A journey of two hearts becoming one</p>
+                                <div class="page-decoration bottom">&#10084;</div>
+                            </div>
+                        </div>
+                        <!-- Page 2 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>How We Met</h2>
+                                <p class="page-caption">The day destiny brought us together</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/1.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">That magical moment when our paths crossed and everything changed forever...</p>
+                            </div>
+                        </div>
+                        <!-- Page 3 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Our First Solo Picture Together</h2>
+                                <p class="page-caption">Capturing the beginning of us</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/2.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">The first of many memories we would create together...</p>
+                            </div>
+                        </div>
+                        <!-- Page 4 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Our Favorite Memory</h2>
+                                <p class="page-caption">A moment frozen in time</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/3.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">Those special moments that make my heart smile every time I think of them...</p>
+                            </div>
+                        </div>
+                        <!-- Page 5 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Our Adventures</h2>
+                                <p class="page-caption">Exploring the world together</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/4.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">Every adventure with you is a treasured memory...</p>
+                            </div>
+                        </div>
+                        <!-- Page 6 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Our Laughs</h2>
+                                <p class="page-caption">Joy in every moment</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/5.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">Your laugh is my favorite melody, your smile my sunshine...</p>
+                            </div>
+                        </div>
+                        <!-- Page 7 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Quiet Moments</h2>
+                                <p class="page-caption">Peace in your presence</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/6.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">In the quiet moments with you, I find my peace...</p>
+                            </div>
+                        </div>
+                        <!-- Page 8 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Celebrations</h2>
+                                <p class="page-caption">Every milestone together</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/7.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">From small celebrations to big milestones, every moment is special with you...</p>
+                            </div>
+                        </div>
+                        <!-- Page 9 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Surprises</h2>
+                                <p class="page-caption">Love in unexpected ways</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/8.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">Life's sweetest surprises are the ones we share...</p>
+                            </div>
+                        </div>
+                        <!-- Page 10 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Through Seasons</h2>
+                                <p class="page-caption">Love through every change</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/9.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">Through every season, you're my constant warmth and light...</p>
+                            </div>
+                        </div>
+                        <!-- Page 11 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Simple Days</h2>
+                                <p class="page-caption">Beauty in simplicity</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/10.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">Even the simplest days become extraordinary with you...</p>
+                            </div>
+                        </div>
+                        <!-- Page 12 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Dreams Together</h2>
+                                <p class="page-caption">Building our future</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/11.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">Every dream I have includes you, every hope is ours to share...</p>
+                            </div>
+                        </div>
+                        <!-- Page 13 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Support & Love</h2>
+                                <p class="page-caption">Always there for each other</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/12.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">In moments of joy and challenge, your love is my anchor...</p>
+                            </div>
+                        </div>
+                        <!-- Page 14 -->
+                        <div class="book-page">
+                            <div class="page-content">
+                                <h2>Today</h2>
+                                <p class="page-caption">Celebrating you</p>
+                                <div class="page-image-placeholder">
+                                    <img src="img/13.png" alt="How We Met">
+                                </div>
+                                <p class="page-text">Today we celebrate the blessing that is you... Happy Birthday, my love!</p>
+                            </div>
+                        </div>
+                        <!-- Page 15 - Final -->
+                        <div class="book-page page-final">
+                            <div class="page-content">
+                                <div class="page-decoration top">&#10084;</div>
+                                <h2>To Be Continued...</h2>
+                                <div class="page-heart-large">&#10084;</div>
+                                <p class="final-text">I'll continue writing this book with you forever.</p>
+                                <p class="final-message">Every page, every chapter, every moment... all with you.</p>
+                                <div class="page-decoration bottom">&#10084;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book-controls">
+                    <button id="book-prev" class="book-nav-btn" aria-label="Previous page">&#10094;</button>
+                    <span id="book-page-num" class="book-page-num">1 / 15</span>
+                    <button id="book-next" class="book-nav-btn" aria-label="Next page">&#10095;</button>
+                </div>
+                <p class="book-swipe-hint">Swipe left/right to turn pages</p>
+            </div>
+        </section>
+
+        <!-- Birthday Letter -->
+        <section id="letter" class="letter-section">
+            <div class="section-header">
+                <h2 class="section-title">A Letter For You</h2>
+                <div class="title-decoration">&#10084;</div>
+            </div>
+            <div class="envelope-container">
+                <div id="envelope" class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-front"></div>
+                    <div class="letter">
+                        <div class="letter-content">
+                            <h3>My Dearest Love,</h3>
+                            <p>On this special day, I want you to know how incredibly grateful I am for your presence in my life. You are not just my dino pot but my bestfriend, my partner(in crime as well), and my greatest adventure.</p>
+                            <p>Every day with you is a gift, every moment a treasure. Your kindness inspires me, your laughter heals me, and your love completes me. Iba kase talaga pag minamahal ka the way kung gano ka rin magmahal, minsan higit pa! You make the ordinary extraordinary and the impossible feel within reach.</p>
+                            <p>Happy Birthday, my love. May this year bring you all the happiness you bring to others, all the love you so freely give, and all the dreams your heart desires. You are deeply Loved and Blessed!</p>
+                            <p>And I hope you like this surprise I made for almost 3 weeks. And thought of it since our first date. So I know you have no Idea that I will be using those compiled photos in one frame everytime na magkasama tayo. So that I'll have this one of a kind and all in one surprise for you. I LOVE YOU SO MUCH, my Kapitana!</p>
+                            <p class="letter-signature">Forever yours,<br>With all my heart, Kapitan &#10084;</p>
+                            <p class="letter-close-hint">Click to close &#10084;</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="envelope-hint">Click the envelope to open</p>
+            </div>
+        </section>
+
+        <!-- Reasons I Love You -->
+        <section id="reasons" class="reasons-section">
+            <div class="section-header">
+                <h2 class="section-title">Reasons I Love You</h2>
+                <div class="title-decoration">&#10084;</div>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your smile</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your kindness</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your laugh</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your hugs</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your eyes</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your support</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your strength</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your intelligence</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your creativity</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your patience</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your determination</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your gentleness</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your passion</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your sense of humor</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your beautiful soul</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>The way you care</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your honesty</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Your loyalty</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Everything about you</p>
+                    </div>
+                </div>
+                <div class="reason-card" data-animate="fade-up">
+                    <div class="reason-card-front">
+                        <span class="reason-icon">&#10084;</span>
+                        <p>Click to reveal</p>
+                    </div>
+                    <div class="reason-card-back">
+                        <p>Simply because you're you</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Notes -->
+        <section id="love-notes" class="notes-section">
+            <div class="section-header">
+                <h2 class="section-title">Love Notes</h2>
+                <div class="title-decoration">&#10084;</div>
+            </div>
+            <div class="notes-container">
+                <div id="note-display" class="note-display glass-card">
+                    <p id="note-text">Click below to reveal a love note...</p>
+                </div>
+                <button id="new-note-btn" class="note-btn">Open Love Note &#10084;</button>
+            </div>
+        </section>
+
+        <!-- Birthday Countdown 
+        <section id="countdown" class="countdown-section">
+            <div class="section-header">
+                <h2 class="section-title">Countdown to Your Birthday</h2>
+                <div class="title-decoration">&#10084;</div>
+            </div>
+            <div id="countdown-display" class="countdown-display">
+                <div class="countdown-item">
+                    <span id="countdown-days" class="countdown-number">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span id="countdown-hours" class="countdown-number">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span id="countdown-minutes" class="countdown-number">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span id="countdown-seconds" class="countdown-number">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>-->
+            <div id="birthday-message" class="birthday-message hidden">
+                <h2>Happy Birthday My Love! &#10084;</h2>
+                <p>Today is all about celebrating you!</p>
+            </div>
+        </section>
+
+        <!-- Final Surprise -->
+        <section id="surprise" class="surprise-section">
+            <div class="section-header">
+                <h2 class="section-title">A Special Surprise</h2>
+                <div class="title-decoration">&#10084;</div>
+            </div>
+            <div class="surprise-container">
+                <div id="gift-box" class="gift-box">
+                    <div class="gift-box-base"></div>
+                    <div class="gift-box-lid">
+                        <div class="gift-ribbon"></div>
+                    </div>
+                    <div class="gift-box-ribbon"></div>
+                </div>
+                <p class="gift-hint">Click the gift to open</p>
+                <div id="surprise-message" class="surprise-message hidden">
+                    <p class="surprise-text">You are the greatest gift life has ever given me.</p>
+                    <p class="surprise-final">I love you forever &#10084;</p>
+                </div>
+
+                <!-- Video Overlay - INSIDE surprise section -->
+                <!-- Video Overlay -->
+                <div id="video-overlay" class="video-overlay hidden">
+                    <div class="video-container">
+                        <button id="close-video-btn" class="close-video-btn" aria-label="Close video">
+                            <span>&times;</span>
+                            <span class="close-tooltip">Exit Fullscreen</span>
+                        </button>
+                        
+                        <!-- Loading Spinner -->
+                        <div id="video-loading" class="video-loading">
+                            <div class="spinner"></div>
+                            <p>Loading your surprise...</p>
+                        </div>
+                        
+                        <!-- Google Drive Video Container -->
+                        <div class="video-player-container">
+                            <iframe 
+                                id="surprise-video-iframe"
+                                class="surprise-video-iframe"
+                                src="https://drive.google.com/file/d/1Y9AAOztX2oMD4Cn7EYzDDb8Ih5rQ3v0w/preview"
+                                frameborder="0"
+                                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <!-- Audio Toggle Button -->
+                        <button id="audio-toggle-btn" class="audio-toggle-btn" aria-label="Toggle audio">
+                            <span id="audio-icon">🔊</span>
+                        </button>
+                    </div>
+                </div>
+
+            <canvas id="confetti-canvas" class="confetti-canvas"></canvas>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with &#10084; for the most wonderful person in my life</p>
+        </footer>
+    </div>
+
+    <!-- Music Player
+    <div id="music-player" class="music-player">
+        <div class="music-info">
+            <span class="music-icon">&#9835;</span>
+            <span class="music-title">Our Song</span>
+        </div>
+        <div class="music-controls">
+            <button id="music-prev" class="music-btn" aria-label="Previous">&#9664;</button>
+            <button id="music-play" class="music-btn music-play-btn" aria-label="Play">&#9654;</button>
+            <button id="music-next" class="music-btn" aria-label="Next">&#9654;</button>
+        </div>
+        <div class="music-progress">
+            <input type="range" id="music-progress-bar" class="progress-bar" value="0" min="0" max="100">
+        </div>
+        <div class="music-volume">
+            <span class="volume-icon">&#128266;</span>
+            <input type="range" id="music-volume" class="volume-slider" value="50" min="0" max="100">
+        </div>
+    </div>-->
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <!-- Balloons Container -->
+    <div id="balloons-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/confetti.js"></script>
+    <script src="js/hearts.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/flipbook.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
